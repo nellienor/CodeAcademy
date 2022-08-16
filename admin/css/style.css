@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 50px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    color: #2D3769;
+    padding-top: 40px;
+}
+body{
+    background-image:linear-gradient(360deg, rgba(225,255,255,1) 0%, rgba(184,216,219,1) 30%, rgba(151,192,199,1) 66%, rgba(86,147,159,1) 100%); 
+    display: grid;
+    justify-items: center;
+}
+.logo_container{
+    display: grid;
+    justify-items: center;
+}
+.logo_container img{
+    width: 500px;
+}
+.navigation{
+    display: grid;
+    justify-items: center;
+}
+.navigation ul{
+    list-style: none;
+    padding: 30px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    color: #2D3769;
+}
+.navigation ul li i{
+   color: #2D3769;
+   font-size: 30px;
+   padding: 10px;
+}
+.main_content{
+    display: grid;
+    justify-items: center;
+}
+.main_content_form form{
+    display: grid;
+}
+.main_content_form label{
+color: #2D3769;
+text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+font-size: 20px;
+}
+.main_content_form form input::placeholder,.main_content_form form textarea::placeholder{
+    color: #2D3769;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    opacity: .7;
+}
+.main_content_form form input,.main_content_form form  textarea{
+    border: 2px solid white;
+    border-radius: 20px;
+    color:#2D3769;
+    padding: 10px;
+    resize: vertical;
+    margin: 3px;
+    transition: .6s ease-in-out;
+    background-color: rgba(255,255,255,.6);
+   
+  }
+  .main_content_form form input{
+      height: 60px;
+      width: 800px;
+  }
+  .main_content_form form input[type="submit"] {
+    background-color: #2D3769;
+    opacity: 0.9;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .main_content_form form input[type="submit"]:hover{
+    opacity: 1;
+    transform: skew(-5deg);
+  }
+  .main_content_form form input:focus,.main_content_form form textarea:focus{
+      transform: scale(1.01);
+  }
+  .error{
+	padding: 10px;
+	background-color: #BB3C2B;
+	border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.error p,.success p,.success1 p{
+    font-size: 22px;
+}
+.success{
+	padding: 10px;
+	background-color: mediumaquamarine;
+	border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.success1{
+    padding: 5px;
+  background-color: mediumaquamarine;
+    color: white;
+    text-align: center;
+    border: 2px solid #007B82;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.articles_table {
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  .articles_table td, .articles_table th {
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  }
+  .articles_table td{
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    color: #2D3769;
+  }
+  .articles_table tr
+  {
+      background-color: white;
+     background-color: rgba(255, 255, 255, .5);
+}
+  
+  
+  .articles_table tr:hover {
+      background-color: whitesmoke;
+    }
+  
+  .articles_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#2D3769;
+    color: white;
+  }
+  .articles_table img{
+      width: 100px;
+  }
+  .btn{
+      display: block;
+      width: 100%;
+      color: white;
+      background-color: #2D3769;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      position: relative;
+  }
+  .btn span{
+      z-index: 3;
+      display: block;
+      position: relative;
+  }
+  .btn:before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      background:   linear-gradient(360deg, rgba(225,255,255,1) 0%, rgba(184,216,219,1) 30%, rgba(151,192,199,1) 66%, rgba(86,147,159,1) 100%); ;
+      height: 0%;
+      border-radius: 5px;
+      z-index: 0;
+      transition: all .45s ease;
+  }
+  .btn:hover:before{
+      height: 100%;
+      border-radius: 5px;
+  }
+  .nav{
+      display: flex;
+  }
+  .nav a{
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      padding: 10px;
+  }
